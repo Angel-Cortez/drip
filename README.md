@@ -10,7 +10,7 @@ Drip primarily uses [SwiftPM](https://swift.org/package-manager/) as its build t
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/acort3255/Drip", from: "1.0.0")
+    .package(url: "https://github.com/Angel-Cortez/Drip", from: "0.0.1")
 ]
 ```
 
