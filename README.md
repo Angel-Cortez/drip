@@ -24,6 +24,28 @@ dependencies: [
 
 For convenience you can declare with your class or struct:
 
+### Defining basic Components
+``` swift
+// ^->RootComponent
+class RootComponent: OmegaComponent {
+    /// The singleton instance.
+    public static let instance = RootComponent()
+}
+// ^->RootComponent->AComponent
+class AComponent: Component {
+    /// The singleton instance.
+    public static let instance = AComponent(parent: RootComponent.instance)
+}
+```
+
+### Providing Dependencies 
+```swift
+__Registry.instance.registerDependencyProviderFactory(for: AComponent.instance.get(NetworkManager.self)) {
+    return NewNetworkManager() as AnyObject
+}
+```
+
+###  Dependency Resolution in `class` or `struct` 
 ```swift
 @Inject(name: AComponent.instance.get(NetworkManager.self))
 var manager: NetworkManager?
