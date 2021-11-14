@@ -1,6 +1,6 @@
 # Drip
 
-The Drip framework is lightweight (in terms of the API exposed to the client), has a relatively simple integration process (minimize XCode project modifications), easy to debug, and also robust, dealing gracefully with errors when they do arise. Lastly, well covered with unit testing. All this made with Swift for Swift.
+The Drip framework is lightweight [dependency injection framework](https://en.wikipedia.org/wiki/Dependency_injection) (in terms of the API exposed to the client), has a relatively simple integration process (minimize XCode project modifications), easy to debug, and also robust, dealing gracefully with errors when they do arise. Lastly, well covered with unit testing. All this made with Swift for Swift.
 
 <br>
 
