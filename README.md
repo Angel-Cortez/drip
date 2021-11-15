@@ -22,7 +22,6 @@ dependencies: [
 
 ## Usage
 
-For convenience you can declare with your class or struct:
 
 ### Defining basic Components
 ``` swift
@@ -47,6 +46,8 @@ __Registry.instance.registerDependencyProviderFactory(for: AComponent.instance.g
 
 ###  Dependency Resolution in `class` or `struct` 
 ```swift
-@Inject(name: AComponent.instance.get(NetworkManager.self))
-var manager: NetworkManager?
+class ViewController {
+    @Inject(name: AComponent.instance.get(NetworkManager.self))
+    var manager: NetworkManager?
+}
 ```
