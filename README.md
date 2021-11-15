@@ -47,7 +47,7 @@ __Registry.instance.registerDependencyProviderFactory(for: AComponent.instance.g
 ###  Dependency Resolution in `class` or `struct` 
 ```swift
 class ViewController {
-    @Inject(name: AComponent.instance.get(NetworkManager.self))
+    @Inject(AComponent.instance.get(NetworkManager.self))
     var manager: NetworkManager?
 }
 ```
